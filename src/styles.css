@@ -5,11 +5,37 @@
   margin: 0;
   font-family: Cambria;
   box-sizing: border-box;
-  background-color: #EBEDEF;
+  background-color: #ebedef;
 }
 
 .container {
-    width: 600px;
-    margin: 0 auto;
-    margin-top: 16px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 16px;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+.button {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding:8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+

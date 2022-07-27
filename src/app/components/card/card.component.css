@@ -1,0 +1,39 @@
+.container-card div {
+  background-color: #ffffff;
+}
+
+.holder-card {
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.name-descr-card{
+  display: flex;
+  flex-direction: row;
+}
+
+.name-card {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.descr-card {
+  margin-top: 20px;
+}
+
+.image-card {
+  width: 150px;
+  height: 150px;
+  margin-right: 8px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.group-card {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
