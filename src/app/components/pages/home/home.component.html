@@ -1,7 +1,9 @@
 <div class="container">
   <form>
-    <input type="search" class="input-home">
-    <div class="logo-home">#SEARCHGithub</div>
+    <input type="search" [(ngModel)]="searchUser"
+    name="searchUser"
+     placeholder="Enter text to search" class="input-home">
+    <div (click)= "getUser()" class="logo-home" >#SEARCHGithub</div>
   </form>
   <app-card></app-card>
 </div>
