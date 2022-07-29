@@ -3,7 +3,7 @@
       <div class="name-descr-card">
         <div>
           <img
-            src="https://i2.cdn.turner.com/cnnnext/dam/assets/140926165711-john-sutter-profile-image-large-169.jpg"
+            src={{user.avatar_url}}
             class="image-card"
           />
         </div>
@@ -11,19 +11,19 @@
           <div class="name-card">
            <h3>{{user.name}}</h3>
           </div>
-          <div>CarlosSouza10</div>
+          <div>{{user.login}}</div>
+          <div>Local: {{user.location}}</div>
           <div class="descr-card">
-            Lorem ipsum dolor sit amet. Iste ipsum non dolorem officiis ex
-            soluta laborum. Ut rerum provident eos corporis nihil aut commodi.
+            {{user.bio}}
           </div>
         </div>
       </div>
       <div class="group-card">
-      <div>Estrelas: 50 ⭐</div>
-      <div>Seguindo: 10 🟣</div>
-      <div>Seguidores: 30 🟡</div>
+      <div>Estrelas {{user.stargazers_coun}}⭐</div>
+      <div>Seguindo {{user.following}} 🟣</div>
+      <div>Seguidores {{user.followers}} 🟡</div>
       <div>
-        <button class="button">Repositórios</button>
+        <div>Repositórios 🟣</div>
       </div>
     </div>
   </div>

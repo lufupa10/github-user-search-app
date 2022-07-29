@@ -7,11 +7,10 @@
       placeholder="Enter text to search"
       class="input-home"
     />
-    <button class="button" (click)="getUser()">Search User</button>
+    <button class="button button-home" (click)="getUser()">Search User</button>
   </form>
 
   <div *ngFor="let item of use">
     <app-card [user]="item"></app-card>
-    {{ item.name }}
   </div>
 </div>
