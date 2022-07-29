@@ -9,8 +9,9 @@
     />
     <button class="button" (click)="getUser()">Search User</button>
   </form>
-  <app-card></app-card>
+
   <div *ngFor="let item of use">
-    {{item.name}}
+    <app-card [user]="item"></app-card>
+    {{ item.name }}
   </div>
 </div>
