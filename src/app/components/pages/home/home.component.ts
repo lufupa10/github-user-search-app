@@ -8,8 +8,7 @@ import { User } from 'src/app/services/User';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  // users: User[] = [];
-  use: any = [];
+  users: User[] = [];
 
   searchUser: string = '';
   constructor(private githubService: GithubService) {}
@@ -18,9 +17,9 @@ export class HomeComponent implements OnInit {
   }
 
   getUser(): void {
-    this.use = [];
-    this.githubService.getGithubUser(this.searchUser).subscribe((data) => {
-      this.use.push(data) ;
+    this.users = [];
+    this.githubService.getGithubUser(this.searchUser).subscribe((data: any) => {
+      this.users.push(data) ;
     });
 
   }

@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="group-card">
-      <div>Estrelas {{star}}⭐</div>
+      <div>Estrelas {{stars}}⭐</div>
       <div>Seguindo {{user.following}} 🟣</div>
       <div>Seguidores {{user.followers}} 🟡</div>
       <div>
@@ -32,7 +32,7 @@
       <h3>Repositórios 🟣</h3>
     </div>
   <div class="scroll_card" *ngFor ="let item of repos;  index as i">
-   <div>{{i+1}} {{item.name}}</div>
+   <div>{{i+1}} - {{item.name}}</div>
   </div>
   </div>
 </div>

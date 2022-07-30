@@ -4,13 +4,13 @@
       type="search"
       [(ngModel)]="searchUser"
       name="searchUser"
-      placeholder="Enter text to search"
+      placeholder="Pesquisa um usuário do GitHub"
       class="input-home"
     />
-    <button class="button button-home" (click)="getUser()">Search User</button>
+    <button class="button button-home" (click)="getUser()">Pesquisar</button>
   </form>
 
-  <div *ngFor="let item of use">
+  <div *ngFor="let item of users">
     <app-card [user]="item"></app-card>
   </div>
 </div>
