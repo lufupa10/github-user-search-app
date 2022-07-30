@@ -1,10 +1,11 @@
 .container-card div {
   background-color: #ffffff;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .holder-card {
-  border-radius: 10px;
-  padding: 8px;
+  margin-bottom: 16px;
 }
 
 .name-descr-card{
@@ -14,7 +15,6 @@
 
 .name-card {
   margin-top: 20px;
-  border-radius: 10px;
 }
 
 .descr-card {
@@ -37,4 +37,19 @@
     justify-content:space-between;
     align-items: center;
 }
+
+.scroll-card {
+  height: 300px;
+  overflow-y: scroll
+}
+
+.teste {
+  border-bottom: 2px solid red;
+}
+
+h3 {
+  padding: 2px;
+  border-radius: 4px;
+}
+
 

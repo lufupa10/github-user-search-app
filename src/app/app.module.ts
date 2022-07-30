@@ -12,7 +12,7 @@ import { HomeComponent } from './components/pages/home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
