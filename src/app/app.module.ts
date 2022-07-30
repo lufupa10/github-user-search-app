@@ -6,13 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import {HttpClientModule} from '@angular/common/http';
-import { HomeComponent } from './components/pages/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CardComponent,
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
