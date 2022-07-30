@@ -14,6 +14,7 @@ export class CardComponent implements OnInit {
   repos: Repo[] = [];
   stars: Stars[] = [];
   showRepo: Boolean = false;
+  order: any;
 
   constructor(private githubService: GithubService, private router: Router) {}
 
@@ -27,6 +28,16 @@ export class CardComponent implements OnInit {
       this.stars = this.repos.reduce(
         (sumOfStars: any, current: any) => sumOfStars + current.stargazers_count, 0);
     });
+  }
+
+  sortListGrowing() {
+    this.order = this.repos.sort((a: any, b: any)=> b.stargazers_count - a.stargazers_count);
+    this.repos = this.order;
+  }
+
+  sortListDescending() {
+    this.order = this.repos.sort((a: any, b: any)=> a.stargazers_count - b.stargazers_count);
+    this.repos = this.order;
   }
 
   goToRepo() {

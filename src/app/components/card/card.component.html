@@ -28,8 +28,12 @@
     </div>
   </div>
   <div *ngIf="showRepo">
-    <div>
-      <h3>Repositórios 🟣</h3>
+    <div class="sort-card">
+      <div>Repositórios {{repos.length}} 💾</div>
+      <div>
+      <span class="button" (click)="sortListGrowing()">Crescente</span>
+      <span class="button" (click)="sortListDescending()">Decrescente</span>
+    </div>
     </div>
   <div class="scroll_card" *ngFor ="let item of repos;  index as i">
    <div>{{i+1}} - {{item.name}}</div>

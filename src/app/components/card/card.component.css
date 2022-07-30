@@ -52,4 +52,13 @@ h3 {
   border-radius: 4px;
 }
 
+.sort-card {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+span {
+  margin-left: 6px;
+}
 
