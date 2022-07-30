@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { GithubService } from 'src/app/services/github.service';
-import { Repo } from 'src/app/services/Repo';
-import { Stars } from 'src/app/services/Stars';
+import { Repo } from 'src/app/services/types/Repo';
+import { Stars } from 'src/app/services/types/Stars';
 
 @Component({
   selector: 'app-card',

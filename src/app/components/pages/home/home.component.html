@@ -9,7 +9,7 @@
     />
     <button class="button button-home" (click)="getUser()">Pesquisar</button>
   </form>
-
+   <h3 *ngIf ="this.message">{{message}}</h3>
   <div *ngFor="let item of users">
     <app-card [user]="item"></app-card>
   </div>
