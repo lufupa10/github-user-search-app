@@ -1,6 +1,6 @@
 <div class="container-card">
   <div class="holder-card">
-      <div class="name-descr-card">
+      <div class="name-description-card">
         <div>
           <img
             src={{user.avatar_url}}
@@ -13,7 +13,7 @@
           </div>
           <div>{{user.login}}</div>
           <div>Local: {{user.location}}</div>
-          <div class="descr-card">
+          <div class="description-card">
             {{user.bio}}
           </div>
         </div>
@@ -36,7 +36,7 @@
       <span class="button" (click)="sortListDescending()">Decrescente</span>
     </div>
     </div>
-  <div class="scroll_card" *ngFor ="let item of repos;  index as i">
+  <div *ngFor ="let item of repos;  index as i">
    <div>{{i+1}} - {{item.name}}</div>
   </div>
   </div>

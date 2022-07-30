@@ -8,7 +8,7 @@
   margin-bottom: 16px;
 }
 
-.name-descr-card{
+.name-description-card{
   display: flex;
   flex-direction: row;
 }
@@ -17,7 +17,7 @@
   margin-top: 20px;
 }
 
-.descr-card {
+.description-card {
   margin-top: 16px;
   margin-bottom: 20px;
 }

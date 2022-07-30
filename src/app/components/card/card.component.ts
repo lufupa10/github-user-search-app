@@ -36,7 +36,7 @@ export class CardComponent implements OnInit {
   }
 
   sortListDescending() {
-    this.order = this.repos.sort((a: any, b: any)=> a.stargazers_count - b.stargazers_count);
+    this.order = this.repos.sort((a:any, b:any)=> a.stargazers_count - b.stargazers_count);
     this.repos = this.order;
   }
 
