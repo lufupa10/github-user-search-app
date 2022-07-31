@@ -10,7 +10,6 @@ import { Repo } from './types/Repo';
 export class GithubService {
 
   private apiUrl = " https://api.github.com/users/"
-  repo: any = "/repos"
 
   constructor(private http: HttpClient) { }
 
@@ -20,6 +19,6 @@ export class GithubService {
   }
 
   getGithubRepo(value: any):Observable<Repo[]> {
-    return this.http.get<Repo[]>(`${this.apiUrl}${value}`+ this.repo);
+    return this.http.get<Repo[]>(`${this.apiUrl}${value}`+ "/repos");
   }
 }
