@@ -15,24 +15,39 @@
         </div>
       </div>
     </div>
+
     <div class="group-card">
       <div>Estrelas {{ stars }}⭐</div>
       <div>Seguindo {{ user.following }} 🟣</div>
       <div>Seguidores {{ user.followers }} 🟡</div>
       <div>
-        <Button class="button" (click)="goToRepo()">Repositórios</Button>
+        <app-button
+          (btnClick)="goToRepo()"
+          buttonText="Repositório"
+          [isDisabled]="false"
+        ></app-button>
       </div>
     </div>
   </div>
+
   <div *ngIf="showRepo">
     <div class="sort-card">
       <div>Repositórios {{ repos.length }} 💾</div>
       <div>
         <div class="title-repo-card">Ordenar por quantidade de estrelas⭐</div>
-        <span class="button" (click)="sortListGrowing()">Crescente</span>
-        <span class="button" (click)="sortListDescending()">Decrescente</span>
+        <app-button
+          (btnClick)="sortListGrowing()"
+          buttonText="Crescente"
+          [isDisabled]="false"
+        ></app-button>
+        <app-button
+          (btnClick)="sortListDescending()"
+          buttonText="Decrescente"
+          [isDisabled]="false"
+        ></app-button>
       </div>
     </div>
+
     <div *ngFor="let item of repos; index as i">
       <a
         href="https://github.com/{{ user.login }}/{{ item.name }}"

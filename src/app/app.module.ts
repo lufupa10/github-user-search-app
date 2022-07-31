@@ -8,6 +8,7 @@ import { CardComponent } from './components/card/card.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
     HomeComponent,
     CardComponent,
     SpinnerComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

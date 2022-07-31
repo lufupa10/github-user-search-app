@@ -1,11 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --color-background: #ebedef;
+  --color-background-button: #4CAF50;
+  --color-background-form: #ffffff;
+  --color-line: #c5cbd5;
+}
+
 
 * {
   padding: 0;
   margin: 0;
   font-family: Cambria;
   box-sizing: border-box;
-  background-color: #ebedef;
+;
+}
+
+html, body {
+  background-color: var(--color-background)
 }
 
 .container {
@@ -20,12 +31,12 @@ form {
     align-items: center;
     padding: 16px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: var(--color-background-form);
     margin-bottom: 25px;
   }
 
-.button {
-    background-color: #4CAF50;
+/* .button {
+    background-color: var(--color-background-button);
     border-radius: 10px;
     border: none;
     color: white;
@@ -36,6 +47,6 @@ form {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+  } */
 
 
