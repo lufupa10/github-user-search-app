@@ -3,13 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { User } from './types/User';
 import { Repo } from './types/Repo';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GithubService {
 
-  private apiUrl = " https://api.github.com/users/"
+  private apiUrl = environment.URL_BASE;
 
   constructor(private http: HttpClient) { }
 
