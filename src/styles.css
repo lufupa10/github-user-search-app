@@ -2,7 +2,7 @@
 :root {
   --color-background: #ebedef;
   --color-background-button: #4CAF50;
-  --color-background-form: #ffffff;
+  --color-background-wwhite: #ffffff;
   --color-line: #c5cbd5;
 }
 
@@ -31,7 +31,7 @@ form {
     align-items: center;
     padding: 16px;
     border-radius: 10px;
-    background-color: var(--color-background-form);
+    background-color: var(--color-background-wwhite);
     margin-bottom: 25px;
   }
 

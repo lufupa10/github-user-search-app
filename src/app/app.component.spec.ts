@@ -14,9 +14,21 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it("should create the app", () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
+  });
+
+  it("should show if the checkConnection variable starts empty array", () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
+    expect(component.checkConnection).toEqual("");
+  });
+
+  it("should show if the checkConnection variable starts empty array", () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
+    expect(component.checkinterent).toEqual("");
   });
 });

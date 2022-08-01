@@ -22,32 +22,32 @@ describe('CardComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the card', () => {
+  it("should create the card", () => {
     const fixture = TestBed.createComponent(CardComponent);
 
     const component = fixture.debugElement.componentInstance;
     expect(component).toBeTruthy();
   });
 
-  it('should show if showRepo receives false ', () => {
+  it("should show if showRepo receives false", () => {
     const fixture = TestBed.createComponent(CardComponent);
     const component = fixture.componentInstance;
     expect(component.showRepo).toEqual(false);
   });
 
-  it('should show if the repos variable starts empty array', () => {
+  it("should show if the repos variable starts empty array", () => {
     const fixture = TestBed.createComponent(CardComponent);
     const component = fixture.componentInstance;
     expect(component.repos).toEqual([]);
   });
 
-  it('should show if the stars variable starts empty array', () => {
+  it("should show if the stars variable starts empty array", () => {
     const fixture = TestBed.createComponent(CardComponent);
     const component = fixture.componentInstance;
     expect(component.stars).toEqual([]);
   });
 
-  it('should show if the order variable starts empty', () => {
+  it("should show if the order variable starts empty", () => {
     const fixture = TestBed.createComponent(CardComponent);
     const component = fixture.componentInstance;
     expect(component.order).toEqual("");

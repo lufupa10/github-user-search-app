@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  checkinterent: any;
+  checkinterent: any = "";
   checkConnection: string = '';
   therichpost$() {
     return merge<any>(

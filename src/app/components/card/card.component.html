@@ -17,7 +17,7 @@
     </div>
 
     <div class="group-card">
-      <div id="cardestrelas">Estrelas {{ stars }}⭐</div>
+      <div>Estrelas {{ stars }}⭐</div>
       <div>Seguindo {{ user.following }} 🟣</div>
       <div>Seguidores {{ user.followers }} 🟡</div>
       <div>
@@ -34,7 +34,7 @@
     <div class="sort-card">
       <div>Repositórios {{ repos.length }} 💾</div>
       <div>
-        <div class="title-repo-card">Ordenar por quantidade de estrelas⭐</div>
+        <div id="cardOrdenar" class="title-repo-card">Ordenar por quantidade de estrelas⭐</div>
         <app-button
           (btnClick)="sortListGrowing()"
           buttonText="Crescente"

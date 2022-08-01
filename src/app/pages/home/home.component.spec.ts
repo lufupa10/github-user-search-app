@@ -24,29 +24,29 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create home', () => {
+  it("should create home", () => {
     expect(component).toBeTruthy();
   });
 
-  it('shows if the variable searchUser starts with empty ', () => {
+  it("shows if the variable searchUser starts with empty ", () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const component = fixture.componentInstance;
     expect(component.searchUser).toEqual("");
   });
 
-  it('shows if the variable message starts with empty', () => {
+  it("shows if the variable message starts with empty", () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const component = fixture.componentInstance;
     expect(component.message).toEqual("");
   });
 
-  it('shows if the variable spinner starts with empty', () => {
+  it("shows if the variable spinner starts with empty", () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const component = fixture.componentInstance;
     expect(component.spinner).toEqual(false);
   });
 
-  it('should show if the users variable starts empty array', () => {
+  it("should show if the users variable starts empty array", () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const component = fixture.componentInstance;
     expect(component.users).toEqual([]);
