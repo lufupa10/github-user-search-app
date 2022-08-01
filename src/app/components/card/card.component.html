@@ -17,9 +17,18 @@
     </div>
 
     <div class="group-card">
-      <div>Estrelas {{ stars }}⭐</div>
-      <div>Seguindo {{ user.following }} 🟣</div>
-      <div>Seguidores {{ user.followers }} 🟡</div>
+    <div class="icon-card">
+      <div>Estrelas {{ stars }}</div>
+      <span class="material-icons">star</span>
+    </div>
+    <div class="icon-card">
+      <div>Seguindo {{ user.following }} </div>
+      <span class="material-icons">public</span>
+    </div>
+    <div class="icon-card">
+      <div>Seguidores {{ user.followers }}</div>
+      <span class="material-icons">verified</span>
+    </div>
       <div>
         <app-button
           id="card-repository"
@@ -33,9 +42,15 @@
 
   <div *ngIf="showRepo">
     <div class="sort-card">
-      <div>Repositórios {{ repos.length }} 💾</div>
+      <div class="icon-card">
+      <div>Repositórios {{ repos.length }}</div>
+      <span class="material-icons">collections_bookmark</span>
+    </div>
       <div>
-        <div id="cardOrdenar" class="title-repo-card">Ordenar por quantidade de estrelas⭐</div>
+        <div class="icon-card">
+        <div id="cardOrdenar" class="title-repo-card">Ordenar por quantidade de estrelas</div>
+        <span class="material-icons">auto_graph</span>
+        </div>
         <app-button
           id="card-growing"
           (btnClick)="sortListGrowing()"
