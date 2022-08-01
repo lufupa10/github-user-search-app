@@ -4,6 +4,11 @@
   --color-background-button: #4CAF50;
   --color-background-wwhite: #ffffff;
   --color-line: #c5cbd5;
+  --color-icon-orange: #FB8C00;
+  --color-icon-blue: #0000FF;
+  --color-icon-yellow: #FFFF00;
+  --color-icon-green: #008000;
+  --color-icon-green004: #4CAF50;
 }
 
 
@@ -35,18 +40,15 @@ form {
     margin-bottom: 25px;
   }
 
-/* .button {
-    background-color: var(--color-background-button);
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding:8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  } */
+  /*icon colors*/
+
+  .material-icons.orange { color: var(--color-icon-orange); }
+  .material-icons.blue { color: var(--color-icon-blue); }
+  .material-icons.yellow { color: var(--color-icon-yellow); }
+  .material-icons.green { color: var(--color-icon-green); }
+  .material-icons.green004 { color: var(--color-icon-green); }
+
+
+
 
 

@@ -19,15 +19,15 @@
     <div class="group-card">
     <div class="icon-card">
       <div>Estrelas {{ stars }}</div>
-      <span class="material-icons">star</span>
+      <span class="material-icons yellow">star</span>
     </div>
     <div class="icon-card">
       <div>Seguindo {{ user.following }} </div>
-      <span class="material-icons">public</span>
+      <span class="material-icons blue">public</span>
     </div>
     <div class="icon-card">
       <div>Seguidores {{ user.followers }}</div>
-      <span class="material-icons">verified</span>
+      <span class="material-icons green">verified</span>
     </div>
       <div>
         <app-button
@@ -44,12 +44,12 @@
     <div class="sort-card">
       <div class="icon-card">
       <div>Repositórios {{ repos.length }}</div>
-      <span class="material-icons">collections_bookmark</span>
+      <span class="material-icons green004">collections_bookmark</span>
     </div>
       <div>
         <div class="icon-card">
         <div id="cardOrdenar" class="title-repo-card">Ordenar por quantidade de estrelas</div>
-        <span class="material-icons">auto_graph</span>
+        <span class="material-icons yellow">auto_graph</span>
         </div>
         <app-button
           id="card-growing"

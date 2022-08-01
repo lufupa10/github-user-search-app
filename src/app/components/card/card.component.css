@@ -63,18 +63,9 @@ span {
   margin-left: 6px;
 }
 
-.star-card {
-  color: orange;
-}
-
 .icon-card {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-/* .material-icons {
-  color: red;
-  margin-left: 100px;
-  position: absolute;
-} */
