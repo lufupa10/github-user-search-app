@@ -22,6 +22,7 @@
       <div>Seguidores {{ user.followers }} 🟡</div>
       <div>
         <app-button
+          id="card-repositorio"
           (btnClick)="goToRepo()"
           buttonText="Repositório"
           [isDisabled]="false"
@@ -36,11 +37,13 @@
       <div>
         <div id="cardOrdenar" class="title-repo-card">Ordenar por quantidade de estrelas⭐</div>
         <app-button
+          id="card-growing"
           (btnClick)="sortListGrowing()"
           buttonText="Crescente"
           [isDisabled]="false"
         ></app-button>
         <app-button
+          id="card-descending"
           (btnClick)="sortListDescending()"
           buttonText="Decrescente"
           [isDisabled]="false"
