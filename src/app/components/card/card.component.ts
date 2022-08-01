@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
   repos: Repo[] = [];
   stars: Stars[] = [];
   showRepo: Boolean = false;
-  order: any;
+  order: any = "";
 
   constructor(private githubService: GithubService, private router: Router) {}
 

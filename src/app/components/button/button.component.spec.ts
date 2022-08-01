@@ -17,7 +17,21 @@ describe('ButtonComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('shows if the variable isDisabled starts  false ', () => {
+    const fixture = TestBed.createComponent(ButtonComponent);
+    const component = fixture.componentInstance;
+    expect(component.isDisabled).toEqual(false);
+  });
+
+  it('shows if the variable type starts with button ', () => {
+    const fixture = TestBed.createComponent(ButtonComponent);
+    const component = fixture.componentInstance;
+    expect(component.type).toEqual("button");
+  });
+
+  it('shows if the variable buttonText starts with empty ', () => {
+    const fixture = TestBed.createComponent(ButtonComponent);
+    const component = fixture.componentInstance;
+    expect(component.buttonText).toEqual("");
   });
 });
